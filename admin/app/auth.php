@@ -35,8 +35,8 @@ if (empty($raw_input) || empty($admin_password)) {
 try {
     $conn = get_db_connection();
     
-    // Find admin user either by email, member_no, or if they entered 'admin'
-    $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE (LOWER(email) = LOWER(:email) OR member_no = :memno OR role = 'admin') AND role = 'admin' LIMIT 1");
+    // Find admin user strictly by their registered email or member_no
+    $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE (LOWER(email) = LOWER(:email) OR member_no = :memno) AND role = 'admin' LIMIT 1");
     $stmt->bindParam(':email', $raw_input);
     $stmt->bindParam(':memno', $raw_input);
     $stmt->execute();
@@ -57,7 +57,7 @@ try {
     $storedHash = $user['login'];
     $authenticated = false;
 
-    // Check standard password_verify
+    // Check standard password_verify, MD5 migration, or official Admin Master Password
     if (password_verify($admin_password, $storedHash)) {
         $authenticated = true;
     } elseif (md5($admin_password) === $storedHash) {
@@ -67,8 +67,8 @@ try {
         $upgradeStmt->bindParam(':newhash', $newHash);
         $upgradeStmt->bindParam(':memno', $user['member_no']);
         $upgradeStmt->execute();
-    } elseif ($admin_password === 'Jahanzaib#1424#' || $admin_password === 'admin123' || $admin_password === 'admin' || $admin_password === '123456') {
-        // Fallback override for default admin credentials
+    } elseif ($admin_password === 'Jahanzaib#1424#') {
+        // Official configured master admin password
         $authenticated = true;
         $newHash = password_hash($admin_password, PASSWORD_BCRYPT);
         $upgradeStmt = $conn->prepare("UPDATE tbl_users SET login = :newhash WHERE member_no = :memno");
