@@ -1,0 +1,31 @@
+RewriteEngine On
+RewriteBase /
+
+# Allow existing direct files/directories to pass through
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Asset rewrite for clean sub-routes (/task/css/... -> /css/..., /seeker/images/... -> /images/...)
+RewriteRule ^(?:task|seeker|lister)/(.+\.(?:css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|pdf))$ $1 [NC,L]
+
+# Clean task detail routes
+RewriteRule ^task/([A-Za-z0-9_-]+)/?$ explore-job.php?jobid=$1 [QSA,L]
+RewriteRule ^task/?$ explore-job.php [QSA,L]
+
+# Clean seeker detail routes
+RewriteRule ^seeker/([A-Za-z0-9_-]+)/?$ employee-detail.php?empid=$1 [QSA,L]
+RewriteRule ^seeker/?$ employee-detail.php [QSA,L]
+
+# Clean lister detail routes
+RewriteRule ^lister/([A-Za-z0-9_-]+)/?$ company.php?ref=$1 [QSA,L]
+RewriteRule ^lister/?$ company.php [QSA,L]
+
+# Friendly aliases
+RewriteRule ^tasks/?$ job-list.php [QSA,L]
+RewriteRule ^task-seekers/?$ employees.php [QSA,L]
+RewriteRule ^task-listers/?$ employers.php [QSA,L]
+
+# Extensionless PHP files (/login -> login.php, /register -> register.php, etc.)
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

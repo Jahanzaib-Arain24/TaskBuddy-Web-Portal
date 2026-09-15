@@ -1,0 +1,29 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.php text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+*.htaccess text eol=lf
+
+# Declare files that will always have CRLF line endings on checkout (Windows batch scripts).
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Denote all binary files that should not be modified by Git.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary

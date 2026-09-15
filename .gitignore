@@ -1,0 +1,58 @@
+# ==============================================================================
+# TaskBuddy - .gitignore Configuration
+# ==============================================================================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Temporary & Cache files
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+cookie_*.txt
+test_cookie_*.txt
+*.session
+
+# Scratch / dev testing folders
+scratch/
+.tempmediaStorage/
+.user_uploaded/
+
+# Environment / Local Secrets (if any)
+.env
+.env.local
+
+# Node & npm
+node_modules/
+package-lock.json
+
+# Screenshots & Test Artifacts
+tests/screenshots/
+tests/screenshots_*/
+*.png.tmp
+
+# Composer (if used in future)
+/vendor/
+
+# User uploaded dynamic files (keep directory structure via .gitkeep)
+# uploads/*
+# !uploads/.gitkeep
+# !uploads/avatars/.gitkeep

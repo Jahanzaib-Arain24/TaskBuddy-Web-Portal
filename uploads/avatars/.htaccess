@@ -1,0 +1,6 @@
+# Deny direct execution of scripts in upload directory
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|pht|exe|pl|cgi|py|sh|bash)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+Options -Indexes
