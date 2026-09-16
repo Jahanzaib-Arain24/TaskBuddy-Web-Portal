@@ -23,6 +23,9 @@ include 'constants/check-login.php';
 
 
 	<link rel="shortcut icon" href="images/ico/favicon.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#2563eb">
+	<link rel="apple-touch-icon" href="images/icons/icon-192.png">
 
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	

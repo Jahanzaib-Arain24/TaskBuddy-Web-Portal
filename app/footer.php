@@ -100,3 +100,17 @@ $tb_root = (file_exists(__DIR__ . '/../logo-white.png') && !file_exists('logo-wh
 		</div>
 	</div>
 </footer>
+
+<script>
+// TaskBuddy PWA Service Worker Registration
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+		var swPath = '<?php echo $tb_root; ?>sw.js';
+		navigator.serviceWorker.register(swPath).then(function(reg) {
+			console.log('TaskBuddy PWA ServiceWorker registered with scope:', reg.scope);
+		}).catch(function(err) {
+			console.log('TaskBuddy PWA ServiceWorker registration failed:', err);
+		});
+	});
+}
+</script>

@@ -22,6 +22,7 @@
   <img src="https://img.shields.io/badge/Security-OWASP_Hardened-10b981?style=for-the-badge&logo=shield" alt="OWASP Security" />
   <img src="https://img.shields.io/badge/Tests-785%20Passed-success?style=for-the-badge" alt="785 Tests Passed" />
   <img src="https://img.shields.io/badge/Responsive-Mobile_&_Desktop_100%25-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="100% Responsive" />
+  <img src="https://img.shields.io/badge/PWA-Installable_Mobile_App-00C7B7?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA Ready" />
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License" />
 </p>
 
@@ -73,6 +74,7 @@ Finding reliable local and remote service specialists or finding genuine freelan
 - **Dynamic Credential Verification**: Multi-tab professional profiles allowing task seekers to showcase academic degrees, certified licenses, working tenures, language proficiencies, and portfolio documents.
 - **End-to-End Recruitment**: Task Listers manage candidates from initial application submission to status review (*Pending*, *Under Review*, *Shortlisted*, *Selected*, *Rejected*).
 - **Print-Ready Dynamic CV Generator**: Auto-generated 2-column recruitment standard CV for every verified seeker.
+- **Progressive Web App (PWA) Ready**: Offline caching, service workers (`sw.js`), and Web App Manifest (`manifest.json`) enabling 1-click mobile app installation on Android & iOS devices.
 - **Automated QA & Security**: 785 automated test assertions ensuring bulletproof access control, CSRF tokens, and SQL injection prevention.
 
 ---
@@ -378,8 +380,10 @@ TaskBuddy/
 ├── PROJECT_OVERVIEW.md            # Comprehensive architectural specification
 ├── README.md                      # Official Project Documentation
 ├── job_portal.sql                 # Complete MySQL schema & seed data
+├── manifest.json                  # PWA Web App Manifest for mobile installation
 ├── router.php                     # PHP built-in web server router
-└── start.bat                      # Windows 1-click launcher script
+├── start.bat                      # Windows 1-click launcher script
+└── sw.js                          # PWA Service Worker for offline caching
 ```
 
 ---
