@@ -4,6 +4,12 @@
   <img src="logo2.png" alt="TaskBuddy Logo" width="290px">
   <h3>Next-Generation Gig, Service & Freelance Task Management Platform</h3>
   <p><i>"Connecting Verified Task Seekers with Trusted Task Listers Seamlessly"</i></p>
+
+  <p align="center">
+    <a href="https://taskbuddy-portal.infinityfreeapp.com/" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Live_Demo-taskbuddy--portal.infinityfreeapp.com-00C7B7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" />
+    </a>
+  </p>
 </div>
 
 ---
@@ -23,6 +29,15 @@
 
 ---
 
+## 🌐 Live Demonstration
+
+The application is deployed and live for testing and evaluation:
+
+- 🔗 **Production URL**: [https://taskbuddy-portal.infinityfreeapp.com/](https://taskbuddy-portal.infinityfreeapp.com/)
+- 🛡️ **Admin Portal**: [https://taskbuddy-portal.infinityfreeapp.com/admin/](https://taskbuddy-portal.infinityfreeapp.com/admin/)
+
+---
+
 ## 📑 Table of Contents
 - [📖 Overview & Core Philosophy](#-overview--core-philosophy)
 - [✨ Comprehensive 4-Module Architecture](#--comprehensive-4-module-architecture)
@@ -30,12 +45,16 @@
   - [Module 2: 💼 Task Seeker (Employee) Portal](#module-2--task-seeker-employee-portal)
   - [Module 3: 🏢 Task Lister (Employer) Portal](#module-3--task-lister-employer-portal)
   - [Module 4: 🛡️ Admin Control Center](#module-4--admin-control-center)
+- [📸 Visual Interface Gallery (20 Screenshots)](#-visual-interface-gallery-20-screenshots)
+  - [1. Public Discovery Hub (8 Screenshots)](#1-public-discovery-hub-8-screenshots)
+  - [2. Task Seeker Portal (2 Screenshots)](#2-task-seeker-portal-2-screenshots)
+  - [3. Task Lister Portal (4 Screenshots)](#3-task-lister-portal-4-screenshots)
+  - [4. Admin Control Center (6 Screenshots)](#4-admin-control-center-6-screenshots)
 - [📱 Universal Multi-Device Responsiveness](#-universal-multi-device-responsiveness)
 - [🛠️ Technology Stack](#️-technology-stack)
 - [📂 Project Structure](#-project-structure)
-- [📸 Screenshots Showcase](#-screenshots-showcase)
 - [🚀 Getting Started & Installation](#-getting-started--installation)
-- [🔑 Default Demo Credentials](#-default-demo-credentials)
+- [🔑 Demo Credentials](#-demo-credentials)
 - [🗺️ RESTful Clean Routing Mapping](#️-restful-clean-routing-mapping)
 - [🎯 Security & Architecture Hardening](#-security--architecture-hardening)
 - [🧪 Automated QA & Testing Suite](#-automated-qa--testing-suite)
@@ -62,14 +81,9 @@ Finding reliable local and remote service specialists or finding genuine freelan
 
 The platform is designed around **four distinct, fully-featured modules**:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                             TASKBUDDY PLATFORM                              │
-├──────────────────────┬──────────────────────┬───────────────────────────────┤
-│ 🌐 PUBLIC HUB        │ 💼 TASK SEEKER       │ 🏢 TASK LISTER    │ 🛡️ ADMIN  │
-│ Landing & Directory  │ Credentials & Gigs   │ Post & ATS        │ Analytics │
-└──────────────────────┴──────────────────────┴───────────────────┴───────────┘
-```
+| 🌐 Module 1: Public Hub | 💼 Module 2: Task Seeker | 🏢 Module 3: Task Lister | 🛡️ Module 4: Admin Center |
+|:---|:---|:---|:---|
+| • Modern Hero Search Banner<br/>• Filterable Task Directory (`/tasks`)<br/>• Task Seeker Directory (`/task-seekers`)<br/>• Task Lister Directory (`/task-listers`)<br/>• Detailed Gig Overview & Bidding<br/>• Unified Auth (`/login`, `/register`) | • 7-Tier Credential Manager<br/>• Academic & Degree Records<br/>• Experience & License Proofs<br/>• Multi-Lingual Proficiencies<br/>• Dynamic Print-Ready CV<br/>• Real-Time Application Tracker | • Private Hiring Dashboard<br/>• 1-Click Task Posting Engine<br/>• Full ATS Applicant Pipeline<br/>• Candidate Status Workflow<br/>• Company Branding & Overview<br/>• Password Security Manager | • Platform-Wide Analytics Dashboard<br/>• Seeker & Lister User Auditing<br/>• Task Moderation & Status Control<br/>• Category & Sub-Category CRUD<br/>• System Security Governance<br/>• Administrator Credentials Hub |
 
 ---
 
@@ -120,6 +134,136 @@ Full-featured administrative control and system observability:
 * **Task Moderation (`/admin/jobs`)**: Review, approve, close, or remove task postings.
 * **Taxonomy Management (`/admin/categories` & `/admin/sub-categories`)**: Complete CRUD operations for task categories and specialized sub-categories.
 * **System Overview & Security Settings (`/admin/change-password`)**: Admin credentials and portal security.
+
+---
+
+## 📸 Visual Interface Gallery (20 Screenshots)
+
+### 1. Public Discovery Hub (8 Screenshots)
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <b>Home Landing Page & Hero Search</b><br/>
+      <img src="Screenshots/Public%20Home/Home%20Page.png" width="100%" alt="Home Page" />
+    </td>
+    <td width="50%" align="center">
+      <b>Explore Tasks & Gigs Directory</b><br/>
+      <img src="Screenshots/Public%20Home/Task%20List.png" width="100%" alt="Task List" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Verified Task Seekers Directory</b><br/>
+      <img src="Screenshots/Public%20Home/Task%20Seeker.png" width="100%" alt="Task Seeker Directory" />
+    </td>
+    <td width="50%" align="center">
+      <b>Registered Task Listers Directory</b><br/>
+      <img src="Screenshots/Public%20Home/Task%20Lister.png" width="100%" alt="Task Lister Directory" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Unified User Authentication Portal</b><br/>
+      <img src="Screenshots/Public%20Home/Login%20Page.png" width="100%" alt="Login Page" />
+    </td>
+    <td width="50%" align="center">
+      <b>Task Seeker Registration Form</b><br/>
+      <img src="Screenshots/Public%20Home/Register%20Task%20Seeker%20Page.png" width="100%" alt="Register Task Seeker" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Task Lister / Employer Registration Form</b><br/>
+      <img src="Screenshots/Public%20Home/Register%20Task%20Lister%20Page.png" width="100%" alt="Register Task Lister" />
+    </td>
+    <td width="50%" align="center">
+      <b>Contact Us & Inquiries Hub</b><br/>
+      <img src="Screenshots/Public%20Home/Contact%20Us.png" width="100%" alt="Contact Us" />
+    </td>
+  </tr>
+</table>
+
+---
+
+### 2. Task Seeker Portal (2 Screenshots)
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <b>Seeker Profile & Multi-Tier Portfolio Manager</b><br/>
+      <img src="Screenshots/Task%20Seeker/Employee%20Profile.png" width="100%" alt="Employee Profile" />
+    </td>
+    <td width="50%" align="center">
+      <b>Print-Ready Dynamic Curriculum Vitae (CV)</b><br/>
+      <img src="Screenshots/Task%20Seeker/Asad%20Khan%20—%20Executive%20Curriculum%20Vitae.png" width="100%" alt="Dynamic CV" />
+    </td>
+  </tr>
+</table>
+
+---
+
+### 3. Task Lister Portal (4 Screenshots)
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <b>Task Lister Profile & Company Settings</b><br/>
+      <img src="Screenshots/Task%20Lister/Company%20Profile.png" width="100%" alt="Company Profile" />
+    </td>
+    <td width="50%" align="center">
+      <b>Public Company Overview Page</b><br/>
+      <img src="Screenshots/Task%20Lister/Company%20Overview.png" width="100%" alt="Company Overview" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Task / Gig Posting Engine</b><br/>
+      <img src="Screenshots/Task%20Lister/Post%20Job.png" width="100%" alt="Post Job" />
+    </td>
+    <td width="50%" align="center">
+      <b>My Tasks & ATS Applicant Review Manager</b><br/>
+      <img src="Screenshots/Task%20Lister/My%20Jobs.png" width="100%" alt="My Jobs" />
+    </td>
+  </tr>
+</table>
+
+---
+
+### 4. Admin Control Center (6 Screenshots)
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <b>Admin Control Center Login Portal</b><br/>
+      <img src="Screenshots/Admin%20Panel/Admin%20Control%20Center%20Login.png" width="100%" alt="Admin Login" />
+    </td>
+    <td width="50%" align="center">
+      <b>Admin Analytics & KPI Dashboard</b><br/>
+      <img src="Screenshots/Admin%20Panel/Dashboard%20-%20Admin.png" width="100%" alt="Admin Dashboard" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Task Moderation & Status Management</b><br/>
+      <img src="Screenshots/Admin%20Panel/Manage%20Tasks%20-%20Admin%20Panel.png" width="100%" alt="Manage Tasks" />
+    </td>
+    <td width="50%" align="center">
+      <b>User Governance & Account Auditing</b><br/>
+      <img src="Screenshots/Admin%20Panel/Manage%20Users%20-%20Admin%20Panel.png" width="100%" alt="Manage Users" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Platform Bids & Application Overview</b><br/>
+      <img src="Screenshots/Admin%20Panel/Applications%20&%20Bids%20-%20Admin%20Panel.png" width="100%" alt="Applications & Bids" />
+    </td>
+    <td width="50%" align="center">
+      <b>Task & Applicant Detail Inspector</b><br/>
+      <img src="Screenshots/Admin%20Panel/Task%20&%20Applicants%20Detail%20-%20Admin%20Panel.png" width="100%" alt="Task & Applicants Detail" />
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -208,6 +352,11 @@ TaskBuddy/
 ├── images/                        # Branding assets, default avatars, badges
 ├── js/                            # JavaScript components & plugin scripts
 ├── mail/                          # PHPMailer SMTP library
+├── Screenshots/                   # Official Module Screenshots (20 Images)
+│   ├── Admin Panel/               # 6 Admin Panel Visuals
+│   ├── Public Home/               # 8 Public Portal Visuals
+│   ├── Task Lister/               # 4 Lister & ATS Visuals
+│   └── Task Seeker/               # 2 Seeker & Dynamic CV Visuals
 ├── tests/                         # Automated QA & Regression Test Suite
 │   ├── framework.php              # Custom lightweight testing framework
 │   ├── run_all_tests.php          # CLI & Web test runner (785 Tests)
@@ -235,49 +384,6 @@ TaskBuddy/
 
 ---
 
-## 📸 Screenshots Showcase
-
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <b>🌐 Public Home & Search Hub</b><br/>
-      <img src="./screenshots/Home.png" width="400px" alt="TaskBuddy Home Page" onerror="this.src='logo2.png'; this.width=220;">
-      <p><i>Modern hero search with smart category & location filters</i></p>
-    </td>
-    <td width="50%" align="center">
-      <b>💼 Task Seeker Profile & Credentials</b><br/>
-      <img src="./screenshots/Seeker_Profile.png" width="400px" alt="Seeker Profile" onerror="this.src='logo2.png'; this.width=220;">
-      <p><i>Verified multi-tab credentials portfolio & profile builder</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <b>🏢 Task Lister ATS & Candidates</b><br/>
-      <img src="./screenshots/Lister_Dashboard.png" width="400px" alt="Lister Dashboard" onerror="this.src='logo2.png'; this.width=220;">
-      <p><i>Candidate applicant tracking & status workflow</i></p>
-    </td>
-    <td width="50%" align="center">
-      <b>🛡️ Admin Analytics & Governance</b><br/>
-      <img src="./screenshots/Admin_Dashboard.png" width="400px" alt="Admin Dashboard" onerror="this.src='logo2.png'; this.width=220;">
-      <p><i>System-wide metrics, user governance & task moderation</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <b>📄 Print-Ready Dynamic CV Builder</b><br/>
-      <img src="./screenshots/Dynamic_CV.png" width="400px" alt="Dynamic CV" onerror="this.src='logo2.png'; this.width=220;">
-      <p><i>Automated 2-column recruitment standard CV generator</i></p>
-    </td>
-    <td width="50%" align="center">
-      <b>📱 Mobile View Responsive Experience</b><br/>
-      <img src="./screenshots/Mobile_View.png" width="400px" alt="Mobile View" onerror="this.src='logo2.png'; this.width=220;">
-      <p><i>100% Mobile & compact phone (360px) responsive layout</i></p>
-    </td>
-  </tr>
-</table>
-
----
-
 ## 🚀 Getting Started & Installation
 
 ### Prerequisites
@@ -291,8 +397,8 @@ TaskBuddy/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/TaskBuddy.git
-   cd TaskBuddy
+   git clone https://github.com/Jahanzaib-Arain24/TaskBuddy-Web-Portal.git
+   cd TaskBuddy-Web-Portal
    ```
 
 2. **Import the Database**
@@ -326,13 +432,13 @@ TaskBuddy/
 
 ---
 
-## 🔑 Default Demo Credentials
+## 🔑 Demo Credentials
 
-| Role | Email / Username | Password | Dashboard Access URL |
-|---|---|---|---|
-| 🛡️ **Administrator** | `admin@taskbuddy.com` | `Jahanzaib#1424#` | `http://localhost:8000/admin/` |
-| 💼 **Task Seeker (Employee)** | `asad@gmail.com` | `pakistan123#` | `http://localhost:8000/login` |
-| 🏢 **Task Lister (Employer)** | `ali@gmail.com` | `pakistan123#` | `http://localhost:8000/login` |
+| Role | Email / Username | Password | Live Demo Link | Local Link |
+|---|---|---|---|---|
+| 🛡️ **Administrator** | `admin@taskbuddy.com` | `Jahanzaib#1424#` | [Admin Live](https://taskbuddy-portal.infinityfreeapp.com/admin/) | `http://localhost:8000/admin/` |
+| 💼 **Task Seeker** | `asad@gmail.com` | `pakistan123#` | [Seeker Login](https://taskbuddy-portal.infinityfreeapp.com/login) | `http://localhost:8000/login` |
+| 🏢 **Task Lister** | `ali@gmail.com` | `pakistan123#` | [Lister Login](https://taskbuddy-portal.infinityfreeapp.com/login) | `http://localhost:8000/login` |
 
 ---
 
