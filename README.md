@@ -537,7 +537,7 @@ This project is open-sourced under the **MIT License** — see the [LICENSE](LIC
 
 **Muhammad Jahanzaib**
 
-- 🌐 **Portfolio**: [jahanzaib-20.netlify.app](https://jahanzaib-20.netlify.app/)
+- 🌐 **Portfolio**: [jahanzaib-24.vercel.app/](https://jahanzaib-24.vercel.app/)
 - 💼 **LinkedIn**: [@jahanzaib-arain](https://www.linkedin.com/in/jahanzaib-arain/)
 - 📧 **Email**: [arainjhanzaib@gmail.com](mailto:arainjhanzaib@gmail.com)
 - 💻 **GitHub**: [@Jahanzaib-Arain24](https://github.com/Jahanzaib-Arain24)
